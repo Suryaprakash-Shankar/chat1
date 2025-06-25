@@ -15,22 +15,49 @@
 //    }
 //
 //}
+//
+//public class surya{
+//    public String name;
+//    public int age;
+//public  surya(String name,int age){
+//    this.name = name;
+//    this.age = age;
+//}
+//
+//public void display(){
+//    System.out.println("Name : " + name);
+//    System.out.println("Age : " + age);
+//}
+//
+//public static void main(String args[]){
+//    surya s1 = new surya("surya",20);
+//    s1.display();
+//}
+//}
+
 
 public class surya{
     public String name;
     public int age;
-public  surya(String name,int age){
-    this.name = name;
-    this.age = age;
+    public  surya(String name,int age){
+        this.name = name;
+        this.age = age;
+    }
+public String getName(){
+        return name;
 }
 
-public void display(){
-    System.out.println("Name : " + name);
-    System.out.println("Age : " + age);
+public void setName(String name){
+        this.name = name;
 }
+    public void display(){
+        System.out.println("Name : " + name);
+        System.out.println("Age : " + age);
+    }
 
-public static void main(String args[]){
-    surya s1 = new surya("surya",20);
-    s1.display();
-}
+    public static void main(String args[]){
+        surya s1 = new surya("surya",20);
+        s1.setName("sumithra");
+        System.out.println("Updated name : "+s1.getName());
+    }
 }
